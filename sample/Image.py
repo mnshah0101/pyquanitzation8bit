@@ -11,7 +11,7 @@ class Image:
         self.path = path
 
         new_path = self.path.split(".")
-        new_path[0] += str(k)
+        new_path[0] += str(colors)
         self.new_path = (".").join(new_path)
 
         self.k = colors
@@ -28,7 +28,7 @@ class Image:
         self.pallette = 0
 
     def create_image(self, array):
-        array = np.array(array, dtype=np.uint8)
+        array = np.array(array, dtype=np.uint8).reshape(self.array.shape)
         return_image = PIL.Image.fromarray(array)
         return self.save_image(return_image)
 
