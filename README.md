@@ -45,7 +45,7 @@ This script is provided under the [MIT License](LICENSE). You are free to use, m
 
 ## Author
 
-- [Your Name]
-- [Your Contact Information]
+- Moksh Shah
+- mokshnshah.me
 
 Feel free to provide your contact information and other relevant details. This README is a starting point, and you can expand on it based on your project's
