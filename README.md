@@ -1,15 +1,17 @@
+requirements and needs.
 
-# 8-Bit Image Quantization with Custom K-Means
+# 8-Bit Image Quantization with Floyd-Steinberg Dithering and Custom K-Means
 
 ## Introduction
 
-This Python script is designed to perform 8-bit color quantization on images using a custom K-Means clustering implementation. Color quantization is the process of reducing the number of distinct colors in an image while preserving its visual quality. In this script, we aim to convert an image into an 8-bit color palette, effectively limiting it to 256 unique colors.
+This Python script performs a dual process of color quantization and dithering on images using a custom K-Means clustering implementation. Color quantization is the process of reducing the number of distinct colors in an image, while dithering aids in preserving the visual quality of the original image by reducing artifacts and smoothing transitions. Specifically, we've now implemented the capability to perform Floyd-Steinberg-Dithering. The final output is an 8-bit color palette image, limiting it to 256 unique colors.
 
 ## Features
 
 - 8-bit color quantization: Reduce the number of colors in an image to 256 or fewer.
+- Floyd-Steinberg Dithering: Newly included feature for image smoothing and artifact reduction.
 - Custom K-Means implementation: Clusters the colors into a representative palette.
-- Output image: Generates a quantized image using the custom color palette.
+- Output image: Generates a quantized, dithered image using the custom color palette.
 
 ## Usage
 
@@ -28,16 +30,16 @@ To use the script, follow these steps:
    - Replace `input_image.png` with the path to your input image.
 
 3. **Viewing the Results**:
-   - The script will generate an 8-bit quantized version of the input image.
+   - The script will generate a quantized, dithered version of the input image.
    - Open the output image to see the results.
 
 ## Planned Features
 
-In the future, we plan to enhance this script by adding dithering techniques to further improve the visual quality of the quantized images. Dithering is a method to reduce artifacts and smooth transitions in the quantized images.
+At this time, we do not have any planned new features. We will continue to maintain and improve the current features based on feedback and findings from usage.
 
 ## Contributions
 
-Contributions to this project are welcome! If you have suggestions, improvements, or want to collaborate on implementing dithering, please feel free to open an issue or create a pull request.
+Contributions to this project are welcome! If you have suggestions, improvements, or want to collaborate on further enhancing the script, please feel free to open an issue or create a pull request.
 
 ## License
 
@@ -47,5 +49,3 @@ This script is provided under the [MIT License](LICENSE). You are free to use, m
 
 - Moksh Shah
 - mokshnshah.me
-
-Feel free to provide your contact information and other relevant details. This README is a starting point, and you can expand on it based on your project's
